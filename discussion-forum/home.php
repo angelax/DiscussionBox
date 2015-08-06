@@ -2,7 +2,8 @@
 	include('asset/header.php');
 
 	function load(){
-		$arrMessage = call_api("discussion","get");
+		include('model/discussion.php');
+		$arrMessage = discussion_get();
 		$results = array('arrMessage' => $arrMessage);
 		return $results;
 	}

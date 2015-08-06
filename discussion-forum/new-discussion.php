@@ -6,7 +6,8 @@
 		$params['message'] = $_POST['message'];
 		$params['title'] = $_POST['title'];
 		$params['create_date'] = date('Y-m-d H:i:s');
-		$id = call_api("discussion","post",$params);
+		include('model/discussion.php');
+		$id = discussion_post($params);
 		header("Location: discussion.php?id=".$id);
 		exit;
 	}

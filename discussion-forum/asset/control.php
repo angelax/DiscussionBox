@@ -18,7 +18,7 @@ foreach($end as $letter){
 	$page .= $letter;
 }
 
-include('/../view/'.$page.'.html');
+include('view/'.$page.'.html');
 
 if(isset($_POST['save'])){
 	save();
