@@ -1,0 +1,126 @@
+body {
+	font-family: Helvetica;
+}
+
+.header {
+	background-image: url("img/header-image.jpg");
+	height: 200px;
+}
+
+h1 {
+	color: white;
+	padding: 75px;
+	font-size: 70px;
+}
+
+h3 {
+	font-size: 35px;
+	color: grey;
+	border-bottom: 3px solid grey;
+	padding-bottom: 10px
+}
+
+h6 {
+	font-size: 20px;
+	margin:20px 0px;
+	display:inline;
+}
+
+a {
+	text-decoration: none;
+	color: #0c65a5;
+}
+
+.comment-section h6 {
+	margin: 40px 0px 25px 0px; 
+}
+
+.body {
+	margin: 50px;
+}
+
+.message {
+	font-size: 18px;
+}
+
+.comment {
+	border-bottom: 1px dotted black;
+}
+
+.comment-section {
+	margin: 20px;	
+}
+
+.discussion {
+	margin: 20px;	
+	border-bottom: 1px solid black;
+}
+
+form {
+	margin-top: 5px;	
+}
+
+input[type=submit] {
+	margin-top: 15px;
+    border-radius: 5px;
+	padding: 15px 20px;
+    border: 0;
+    background: #E5E4E2;
+	font-size:20px;
+	font-weight:bold;
+	display:block;
+}
+
+textarea {
+	width:100%;
+	box-sizing: border-box;
+}
+
+input[type=text] {
+	width:100%;
+}
+
+span {
+	float:right;
+	font-weight: normal;
+}
+
+.discussion span {
+	font-size:15px;
+}
+
+.labels {
+	float:left;
+}
+
+h3 span {
+	font-size:17px;
+}
+
+.user-form div label{
+	margin-top: 5px 0;
+    display:inline-block;
+	font-size: 20px;
+	padding: 9px 0;
+}
+
+.user-form div input[type=text],
+.user-form div input[type=password]{
+	height: 30px;
+	width: 400px;
+	margin: 7px 0 3px 0;
+}
+
+.user-form div {
+	margin-right:20px;
+}	
+
+#register-user{
+	clear:both; 
+	display:block;
+}
+
+.margin{
+	margin: 20px 0px;
+}
+

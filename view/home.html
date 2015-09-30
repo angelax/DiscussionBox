@@ -1,0 +1,14 @@
+<?php include('header.html'); ?>
+
+<div class="body">
+	<h2>The Newest Discussions</h2>
+	<div class="messages">
+		<?php
+		foreach($results['arrMessage'] as $i) : ?>
+			<div class="discussion"><a href="discussion.php?id=<?php echo $i['discussion_id']; ?>"><h6 class="title"><?php echo $i['title']; ?></h6></a> <span> <?php echo $i['create_date']; ?> </span>
+				<p><?php echo $i['message']; ?></p>
+			</div>
+		<?php endforeach ?>
+	</div>
+	<div><a href="new-discussion.php">Add a New Discussion</a></div>
+<div>

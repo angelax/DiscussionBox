@@ -1,0 +1,33 @@
+<?php include('header.html'); ?>
+
+<body>
+<h3>Create a new Account</h3>
+<div class="form">
+<form class="user-form" method="post">
+	<div class="labels">
+		<label>Email:</label>
+		<br />
+		<label>Password:</label>
+		<br />
+		<label>Confirm Password:</label>
+		<br />
+		<label>First Name:</label>
+		<br />
+		<label>Last Name:</label>
+	</div>
+	<div>
+		<input type="text" name="email"/>
+		<br />
+		<input type="password" name="password"/>
+		<br />
+		<input type="password" name="confirm_password"/>
+		<br />
+		<input type="text" name="first_name"/>
+		<br />
+		<input type="text" name="last_name"/>
+	</div>
+	
+	<input class="button" type="submit" name="save" value="Register" />
+</form>
+</div>
+</body>

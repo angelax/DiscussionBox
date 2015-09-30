@@ -1,0 +1,27 @@
+<?php include('header.html'); ?>
+
+<div class="body">
+	<div>
+		<div>
+			<h3> <?php echo $results['arrMessage'][0]['title']; ?> <span> <?php echo $results['arrMessage'][0]['create_date']; ?> </span></h3>
+			<p class="message"> <?php echo $results['arrMessage'][0]['message']; ?> </p>
+			<p>Posted By: <?php echo $results['creator']; ?></p>
+		</div>
+		<div class="comment-section">
+			<h6> Comments </h6>
+			<?php
+			foreach($results['arrComment'] as $i) : ?>
+				<div class="comment">
+					<p> Posted by <?php echo $i['name']; ?> on <?php echo $i['create_date']; ?> </p>
+					<p style="margin-left:20px;"> <?php echo $i['comment']; ?> </p>
+				</div>
+			<?php endforeach ?>
+			<form method="post">
+				<p>Add a Comment</p>
+				<textarea name="comment" rows="4" cols="50"></textarea>
+				</br>
+				<input type="submit" name="save" value="Add Comment"/>
+			</form>
+		</div>
+	<div>
+</div>
